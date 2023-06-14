@@ -26,5 +26,6 @@ Visual Studio 2017， Windows 10， 正常运行
 
 也可以关掉 VLC，使用 ffplay 播放 `ffplay -protocol_whitelist file,udp,rtp test.sdp`
 
+![image](https://github.com/mailbyms/FFmpegRTP/assets/16809751/86efe4d5-9e63-4adc-af9f-4afe39cb3424)
 
 
