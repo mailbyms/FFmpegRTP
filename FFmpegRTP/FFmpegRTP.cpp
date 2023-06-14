@@ -24,7 +24,7 @@
 int main()
 {
 	//Init ffmpeg
-	avcodec_register_all();
+	// avcodec_register_all();
 	av_register_all();
 	avformat_network_init();
 
@@ -103,13 +103,6 @@ int main()
 		av_init_packet(&pkt);
 		pkt.data = NULL;    // packet data will be allocated by the encoder
 		pkt.size = 0;
-
-		int R, G, B;
-		R = G = B = i % 255;
-
-		int Y = 0.257 * R + 0.504 * G + 0.098 * B + 16;
-		int U = -0.148 * R - 0.291 * G + 0.439 * B + 128;
-		int V = 0.439 * R - 0.368 * G - 0.071 * B + 128;
 
 		/* prepare a dummy image */
 		/* Y */
